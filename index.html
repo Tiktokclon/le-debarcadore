@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Débarcadère - Restaurant Abidjan</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f8f8f8; color: #333; }
+    header { background: #004b3c; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    .hero { background: url('https://baab.ci/wp-content/uploads/2022/06/LE-DEBARCADERE.jpeg') center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em; }
+    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .menu, .form-container { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .footer { background: #004b3c; color: white; text-align: center; padding: 20px; }
+    .button { background: #00785a; color: white; padding: 10px 20px; border-radius: 5px; border: none; font-size: 1rem; cursor: pointer; }
+    .gallery img { width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px; }
+    input, textarea, select { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ddd; font-size: 1rem; }
+    @media (max-width: 768px) {
+      .hero { height: 200px; font-size: 1.5em; text-align: center; padding: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Le Débarcadère</h1>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#reservation">Réserver</a>
+      <a href="#avis">Avis</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    Goûtez à l’excellence en bord de lagune
+  </div>
+
+  <div class="section" id="apropos">
+    <h2>À propos</h2>
+    <p>Situé à Treichville en bord de lagune, Le Débarcadère vous offre une cuisine ivoirienne raffinée dans une ambiance conviviale. Parfait pour vos soirées, vos déjeuners d’affaires ou vos week-ends détente.</p>
+  </div>
+
+  <div class="section" id="menu">
+    <h2>Notre Menu</h2>
+    <div class="menu">
+      <ul>
+        <li>Poisson braisé - 6 000 FCFA</li>
+        <li>Poulet braisé - 5 000 FCFA</li>
+        <li>Attiéké poisson - 5 500 FCFA</li>
+        <li>Kédjénou de poulet - 4 500 FCFA</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="gallery">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="https://baab.ci/wp-content/uploads/2022/06/LE-DEBARCADERE.jpeg" alt="Le restaurant" />
+      <img src="https://via.placeholder.com/600x400?text=Vue+Lagune" alt="Vue lagune" />
+      <img src="https://via.placeholder.com/600x400?text=Plat+Local" alt="Plat local" />
+    </div>
+  </div>
+
+  <div class="section" id="reservation">
+    <h2>Réserver une table</h2>
+    <form class="form-container" method="post">
+      <input type="text" name="nom" placeholder="Votre Nom" required />
+      <input type="tel" name="telephone" placeholder="Votre Téléphone" required />
+      <input type="date" name="date" required />
+      <input type="time" name="heure" required />
+      <textarea name="message" placeholder="Message (optionnel)" rows="3"></textarea>
+      <button type="submit" class="button">Envoyer la réservation</button>
+    </form>
+  </div>
+
+  <div class="section" id="avis">
+    <h2>Laissez un avis</h2>
+    <form class="form-container" method="post">
+      <input type="text" name="nom" placeholder="Votre Nom" required />
+      <input type="email" name="email" placeholder="Votre Email (optionnel)" />
+      <label for="note">Note du service :</label>
+      <select name="note" required>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Très bon</option>
+        <option value="3">3 - Moyen</option>
+        <option value="2">2 - Médiocre</option>
+        <option value="1">1 - Mauvais</option>
+      </select>
+      <textarea name="avis" placeholder="Votre avis sur le restaurant" rows="4" required></textarea>
+      <button type="submit" class="button">Envoyer l'avis</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Le Débarcadère. Site de démonstration créé pour présentation.
+  </div>
+</body>
+</html>
